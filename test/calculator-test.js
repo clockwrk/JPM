@@ -1,5 +1,6 @@
-
-
+var Calculator = require('../js/calculator');
+var chai = require('chai');
+var expect = chai.expect;
 
 
 describe( "Calculator", function(){
@@ -20,6 +21,6 @@ describe( "Calculator", function(){
  expect( calculator.divide( 10, 2 ) ).to.equal( 5 );
  } );
  it( "does not divide by 0", function(){
- expect( calculator.divide( 5, 0 ) ).to.equal( NaN );
+ expect( calculator.divide( 5, 0 ) ).to.be.NaN;
  } );
 } );
