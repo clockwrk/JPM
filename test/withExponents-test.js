@@ -1,14 +1,15 @@
+'strict mode'
 var Calculator =  require('../js/calculator'),
     withExponents = require('../js/withExponents'),
     chai = require('chai'),
-    expect = chai.expect;;
+    expect = chai.expect;
 
 
 describe( "withExponents", function(){
  var calculator;
  beforeEach( function(){
  calculator = new Calculator();
- console.log('withExponents',withExponents)
+
  withExponents.call( calculator );
  } );
  it( "returns 2^3", function(){
